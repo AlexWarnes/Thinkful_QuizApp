@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="description" content="Test your knowledge of the galaxy with a short quiz and gain a cosmic perspective.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cosmic Perspective: Milky Way Quiz</title>
+
+	<!-- STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cairo:300, 400|Nixie+One" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="gridrules.css">
+</head>
+<body>
+	<nav role="navigation" class="navBar">
+		<img src="http://icons.iconarchive.com/icons/dtafalonso/modern-xp/512/ModernXP-73-Globe-icon.png" alt="Earth">
+		<a href="#">Home</a>
+	</nav>
+	
+	<main role="main">
+		<section role="region" class="launchQuizPage">
+			<header role="banner">
+				<h1>COSMIC PERSPECTIVE</h1>
+				<p class="quote">"Our sun is one of 100 billion stars in our galaxy. Our galaxy is one of billions of galaxies populating the universe. It would be the height of presumption to think that we are the only living things in that enormous immensity."</br><span class="quoteName"> - Wernher von Braun</span></p>
+			</header>
+
+			<h2>Test your knowledge of the galaxy to begin your adventure.</h2>
+			<button role="button" class="launchQuizButton">Launch Quiz<img src="https://image.flaticon.com/icons/png/128/123/123369.png" alt="Rocket"></button>
+		</section>
+
+<!-- Hide from here down when page loads -->
+		
+		<section role="region" class="scoreCard hidden">
+			<div class="row">
+				<div class="col-4">
+					<div class="currentScore">
+						<h4>Current Score</h4>
+						<ul class="score">
+							<li class="js-correct">Correct: <span class="js-number-correct">0</span></li>
+							<li class="js-incorrect">Incorrect: <span class="js-number-incorrect">0</span></li>
+						</ul>
+						<p>Question <span class="questionCount">1</span> of 5</p>
+					</div>
+				</div>
+				<div class="col-6">
+					<p class="answerWarning"></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 1 -->
+
+		<section role="region" class="question q1 hidden">
+			<div class="row">
+				<div class="col-6">
+					<form action="#" method="#">
+						<fieldset>
+							<legend>In what galaxy do we live?</legend>
+							<input id="answer1A" name="answer" type="radio" value="A">
+							<label for="answer1A">A: Andromeda</label><br>
+
+							<input id="answer1B" name="answer" type="radio" value="B">
+							<label for="answer1B">B: Milky Way</label><br>
+
+							<input id="answer1C" name="answer" type="radio" value="C">
+							<label for="answer1C">C: Triangulum</label><br>
+
+							<input id="answer1D" name="answer" type="radio" value="D">
+							<label for="answer1D">D: Whirlpool</label><br>
+							<button role="button" class="submitAnswer">Submit Answer</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-6">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Earth_and_the_Moon_2016-07-05.gif" alt="The moon revolving around the Earth" class="qPhoto">
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 1 RESPONSES -->
+
+		<section role="region" class="response correct q1Correct hidden">
+			<p>That's right! Our solar system is in the Milky Way galaxy, and our sun is one of over 100 billion stars just within the Milky Way.</p>	
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+		<section role="region" class="response incorrect q1Incorrect hidden">
+			<p>Sorry, that's off by several light years. Our solar system is in the Milky Way galaxy, and our sun is one of over 100 billion stars just within the Milky Way.</p>
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+
+		<!-- QUESTION 2 -->
+
+		<section role="region" class="question q2 hidden">
+			<div class="row">
+				<div class="col-6">
+					<form action="#" method="#">
+						<fieldset>
+							<legend>If we live in the Milky Way Galaxy, how are we able to look at it?</legend>
+							<input id="answer2A" name="answer" type="radio" value="A">
+							<label for="answer2A">A: You can only see it using a telescope</label><br>
+
+							<input id="answer2B" name="answer" type="radio" value="B">
+							<label for="answer2B">B: Gravitational waves</label><br>
+
+							<input id="answer2C" name="answer" type="radio" value="C">
+							<label for="answer2C">C: It's photoshopped!</label><br>
+
+							<input id="answer2D" name="answer" type="radio" value="D">
+							<label for="answer2D">D: Our solar system is on the outskirts of the galaxy, and the notable view is looking toward the galaxy's center</label><br>
+							<button role="button" class="submitAnswer">Submit Answer</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-6">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/1kpc_Star_Map.gif" alt="Rotating map of many stars" class="qPhoto q2photo">
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 2 RESPONSES -->
+
+		<section role="region" class="response correct q2Correct hidden">
+			<p>Exactly. If you think of the galactic core as "Downtown Milky Way", our solar system is a suburb that has a great view of the downtown skyline.</p>	
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+		<section role="region" class="response incorrect q2Incorrect hidden">
+			<p>Nope! If you think of the galactic core as "Downtown Milky Way", our solar system is a suburb that has a great view of the downtown skyline.</p>
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+
+		<!-- QUESTION 3 -->
+
+		<section role="region" class="question q3 hidden">
+			<div class="row">
+				<div class="col-6">
+					<form action="#" method="#">
+						<fieldset>
+							<legend>What is required to see the Milky Way core?</legend>
+							<input id="answer3A" name="answer" type="radio" value="A">
+							<label for="answer3A">A: Just dark and clear skies</label><br>
+
+							<input id="answer3B" name="answer" type="radio" value="B">
+							<label for="answer3B">B: Dark and clear skies, and an observatory</label><br>
+
+							<input id="answer3C" name="answer" type="radio" value="C">
+							<label for="answer3C">C: Dark and clear skies, and the right time of year</label><br>
+
+							<input id="answer3D" name="answer" type="radio" value="D">
+							<label for="answer3D">D: This is all fake, you cannot see the Milky Way core</label><br>
+							<button role="button" class="submitAnswer">Submit Answer</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-6">
+					<img src="http://www.alexwarnes.com/uploads/7/2/0/2/72022555/milky-way-over-route-60-fisheye-2_orig.jpg" alt="Milky Way core" class="qPhoto q3photo">
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 3 RESPONSES -->
+
+		<section role="region" class="response correct q3Correct hidden">
+			<p>Yup, that's all you need! Varying slightly by location, the Milky Way core is visible for at least part of the night from March-October (If you live in the Northern Hemisphere it appears in the southern sky). From November-February the sun sits between Earth and the galactic core, blocking our view. <a href="http://darksitefinder.com/how-to-see-the-milky-way/" target="_blank">Here's a checklist</a> for trying to see the Milky Way for yourself!</p>	
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+		<section role="region" class="response incorrect q3Incorrect hidden">
+			<p>Sorry, that's not quite right. All you need are dark, clear skies and the right timing! Varying slightly by location, the Milky Way core is visible for at least part of the night from March-October (If you live in the Northern Hemisphere it appears in the southern sky). From November-February the sun sits between Earth and the galactic core, blocking our view. <a href="http://darksitefinder.com/how-to-see-the-milky-way/" target="_blank">Here's a checklist</a> for trying to see the Milky Way for yourself!</p>
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+
+		<!-- QUESTION 4 -->
+
+		<section role="region" class="question q4 hidden">
+			<div class="row">
+				<div class="col-6">
+					<form action="#" method="#">
+						<fieldset>
+							<legend>About how long does it take for your eyes to adjust to the dark?</legend>
+							<input id="answer4A" name="answer" type="radio" value="A">
+							<label for="answer4A">A: 10 minutes</label><br>
+
+							<input id="answer4B" name="answer" type="radio" value="B">
+							<label for="answer4B">B: 30 minutes</label><br>
+
+							<input id="answer4C" name="answer" type="radio" value="C">
+							<label for="answer4C">C: 60 minutes</label><br>
+
+							<input id="answer4D" name="answer" type="radio" value="D">
+							<label for="answer4D">D: No one can see in the dark</label><br>
+							<button role="button" class="submitAnswer">Submit Answer</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-6">
+					<img src="http://www.alexwarnes.com/uploads/7/2/0/2/72022555/storm-rolling-in_orig.jpg" alt="Milky Way core" class="qPhoto q4photo">
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 4 RESPONSES -->
+
+		<section role="region" class="response correct q4Correct hidden">
+			<p>You got it! Our eyes take about 30 minutes to become dark-adjusted, but beware: headlights, cell phones, and even the moon can reset your dark-adjusted vision and you'll have to wait another 30 mintutes for the sensitivity to come back. TIP: Use a red-light flashlight while stargazing. Red light does not adversely affect your dark-adjusted vision!</p>	
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+		<section role="region" class="response incorrect q4Incorrect hidden">
+			<p>That's incorrect. Our eyes take about 30 minutes to become dark-adjusted, but beware: headlights, cell phones, and even the moon can reset your dark-adjusted vision and you'll have to wait another 30 mintutes for the sensitivity to come back. TIP: Use a red-light flashlight while stargazing. Red light does not adversely affect your dark-adjusted vision!</p>
+			<button role="button" class="nextQuestion">Proceed to Next Question</button>
+		</section>
+
+		<!-- QUESTION 5 -->
+
+		<section role="region" class="question q5 hidden">
+			<div class="row">
+				<div class="col-6">
+					<form action="#" method="#">
+						<fieldset>
+							<legend>In dark skies, what does the Milky Way look like to the naked eye?</legend>
+							<input id="answer5A" name="answer" type="radio" value="A">
+							<label for="answer5A">A: A rainbow of colors</label><br>
+
+							<input id="answer5B" name="answer" type="radio" value="B">
+							<label for="answer5B">B: Just like the photos</label><br>
+
+							<input id="answer5C" name="answer" type="radio" value="C">
+							<label for="answer5C">C: A nebulous band of whitish-greyish glow</label><br>
+
+							<input id="answer5D" name="answer" type="radio" value="D">
+							<label for="answer5D">D: For the last time, you cannot see the Milky Way</label><br>
+							<button role="button" class="submitAnswer">Submit Answer</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-6">
+					<img src="http://www.alexwarnes.com/uploads/7/2/0/2/72022555/milky-way-raw-vs-processed_orig.jpg" alt="Milky Way core" class="qPhoto q5photo">
+				</div>
+			</div>
+		</section>
+
+		<!-- QUESTION 5 RESPONSES -->
+
+		<section role="region" class="response correct q5Correct hidden">
+			<p>Right on. Don't expect exactly what you see in photos. Those are taken with cameras that accumulate light in ways the human eye cannot. The human view of the Milky Way core is nonetheless spectacular.</p>
+			<button role="button" class="nextQuestion">See your results!</button>
+		</section>
+		<section role="region" class="response incorrect q5Incorrect hidden">
+			<p>Not exactly. Don't expect exactly what you see in photos. Those are taken with cameras that accumulate light in ways the human eye cannot. The human view of the Milky Way core is nonetheless, spectacular.</p>
+			<button role="button" class="nextQuestion">See your results!</button>
+		</section>
+
+		<!-- RESULTS PAGE -->
+
+		<section role="region" class="question q6 resultsPage hidden">
+			<div class="row">
+				<div class="col-6">
+					<h2>Way to go! You scored <span class="grade"></span></h2>
+					<p>Enjoy your stargazing!</p>
+					<button role="button" class="retake">Retake Quiz</button>
+				</div>
+				<div class="col-6">
+					<img src="http://www.alexwarnes.com/uploads/7/2/0/2/72022555/milky-way-3-vertical-pano-3_orig.jpg" alt="Milky Way core" class="qPhoto resultsPhoto">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer role="contentInfo">
+		<p>View the source code for this quiz on <a href="#">GitHub</a></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
