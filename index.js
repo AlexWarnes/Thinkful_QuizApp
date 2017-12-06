@@ -63,13 +63,14 @@ function submitAnswer() {
 function checkAnswer() {
 	if (userAnswers[userAnswers.length-1] === answerKey[userAnswers.length-1]) {
 		console.log('correct');
+		console.log(onQuestion);
 		correct++;
-		$(event.target).closest('.question').addClass('hidden');
+		$('.q'+onQuestion).addClass('hidden');
 		$('.'+responseCorrect).removeClass('hidden');
 	} else {
 		console.log('incorrect');
 		incorrect++;
-		$(event.target).closest('.question').addClass('hidden');
+		$('.q'+onQuestion).addClass('hidden');
 		$('.'+responseIncorrect).removeClass('hidden');
 	}
 }
@@ -84,9 +85,9 @@ function nextQuestion() {
 	$('.nextQuestion').on('click', function(event) {
 		event.preventDefault();
 		onQuestion++;
-		$('.questionCount').text(onQuestion);
 		responseCorrect = 'q'+onQuestion+'Correct';
 		responseIncorrect = 'q'+onQuestion+'Incorrect';
+		$('.questionCount').text(onQuestion);
 		$('.response').addClass('hidden');
 		$('.q'+onQuestion).removeClass('hidden');
 		window.scrollTo(0,0);
@@ -107,10 +108,15 @@ function nextQuestion() {
 // launchQuizPage to start over; and finally auto scroll back to the top!
 function retakeQuiz() {
 	$('.retake').on('click', function(event) {
+		event.preventDefault();
 		correct = 0;
 		incorrect = 0;
 		onQuestion = 1;
+		userAnswers = [];
+		responseCorrect = 'q'+onQuestion+'Correct';
+		responseIncorrect = 'q'+onQuestion+'Incorrect';
 		updateScoreCard();
+		$('.questionCount').text(onQuestion);
 		$('.resultsPage').addClass('hidden');
 		$('.launchQuizPage').removeClass('hidden');
 		window.scrollTo(0,0);
